@@ -1,20 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      AppEjemplo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-text color="primary">
+    <h1>Página Home</h1>
+  </ion-text>
+  <ion-text>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima saepe, reiciendis dolor delectus numquam fugiat fuga repellendus hic perspiciatis eligendi vero, excepturi mollitia quo consequuntur earum nisi, similique iste placeat!</p>
+  </ion-text>
+  <ion-button expand="expand" shape="round" routerLink='../pag2'>
+    Ir a página 2
+  </ion-button>
+  <ion-button expand="block" color="warning" routerLink='../pag3'>
+    Ir a página 3
+  </ion-button>
+  
 </ion-content>
+
+<ion-footer class="ion-padding">
+  <ion-toolbar>
+    <ion-text color="dark" slot="end">
+      <p>App Ejemplo -2021</p>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>

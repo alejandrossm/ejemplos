@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pag2</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Volver" mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Página 2</ion-title>
+    <ion-icon slot="end" name="list" class="ion-padding" color="primary"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <ion-text color="primary">
+    <h1>Está es la página 2</h1>
+  </ion-text>
 </ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="medium" class="ion-padding">
+    <ion-text slot="end">
+      <p>App Ejemplo -2021</p>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>
