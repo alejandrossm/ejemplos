@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
     <ion-title>
       AppEjemplo
     </ion-title>
@@ -25,10 +28,4 @@
   
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar color="dark">
-    <ion-text slot="end" class="ion-padding">
-      <p>App Ejemplo -2021</p>
-    </ion-text>
-  </ion-toolbar>
-</ion-footer>
+<app-footer></app-footer>
