@@ -1,9 +1,18 @@
-<app-encabezado titulo="Página 2" icono="list"></app-encabezado>
+<app-encabezado titulo="Ejemplo List Item" icono="list"></app-encabezado>
 
-<ion-content class="ion-padding">
-  <ion-text color="primary">
-    <h1>Está es la página 2</h1>
-  </ion-text>
+<ion-content>
+  <ion-list *ngFor="let per of personas">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="per.imagen">
+      </ion-avatar>
+      <ion-label>
+        <h3>{{per.apellido}}</h3>
+        <p>{{per.nombre}}</p>
+    </ion-label>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
 
 
