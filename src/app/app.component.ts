@@ -30,10 +30,11 @@ export class AppComponent {
       texto: 'Alertas'
     },
     {
-      destino: 'pag4',
-      icono: 'flash',
-      texto: 'no hace nada'
+      destino: 'sumapage',
+      icono: 'add',
+      texto: 'Sumar'
     },
+   
 ]
 
   constructor() {}

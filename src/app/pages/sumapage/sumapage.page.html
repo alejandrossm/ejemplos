@@ -1,0 +1,56 @@
+<app-encabezado titulo="Sumas" icono="add" ></app-encabezado>
+
+<ion-content class="ion-padding">
+  <ion-list-header>
+    <ion-text color="primary"><h3>Ingresa tus números</h3></ion-text>
+  </ion-list-header>
+ 
+
+      <ion-item >
+        <ion-label position="floating">Ingresa número 1</ion-label>
+        <ion-input type="number" [(ngModel)]="n1"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating">Ingresa número 2</ion-label>
+        <ion-input type="number" [(ngModel)]="n2"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" (click)="Sumar()">
+        Sumar
+      </ion-button>
+
+      <div>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Suma con Formulario</ion-title>
+            
+          </ion-toolbar>
+        </ion-header>
+        <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)" >
+          <!-- <ion-label>Es valido:{{formulario.valid}}</ion-label>
+          <ion-label>-Boton deshabilitado?: {{formulario.invalid}}</ion-label> -->
+
+          <ion-item>
+            <ion-label position="floating">Ingrese número</ion-label>
+            <ion-input type="number" [(ngModel)]="a" name="numa" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Ingrese número</ion-label>
+            <ion-input type="number" [(ngModel)]="b" name="numb" required></ion-input>
+          </ion-item>
+
+          <ion-button type="submit" expand="block" [disabled]="formulario.invalid">
+            Sumar con Formulario
+          </ion-button>
+
+
+        </form>
+
+
+      </div>
+
+</ion-content>
+
+<app-footer></app-footer>
