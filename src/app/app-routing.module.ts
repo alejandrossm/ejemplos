@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'sumapage',
     loadChildren: () => import('./pages/sumapage/sumapage.module').then( m => m.SumapagePageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
 ];
 
 @NgModule({

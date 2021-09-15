@@ -34,6 +34,11 @@ export class AppComponent {
       icono: 'add',
       texto: 'Sumar'
     },
+    {
+      destino: 'login',
+      icono: 'power',
+      texto: 'Iniciar Sesion'
+    },
    
 ]
 

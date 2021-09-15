@@ -38,7 +38,7 @@ export class SumapagePage implements OnInit {
   async onSubmit(form)
   {
 
-    console.log(form);
+    console.log({form});
     const alert = await this.alertController.create({
       
       header: 'Resultado con Form',

@@ -24,3 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+//mis estilos
+.personalizada .alert-head{
+    background:var(--ion-color-danger)!important;
+}
+
+.personalizada .alert-title{
+    color:white !important;
+}
+
+.personalizada .alert-sub-title{
+    color:white !important;
+}

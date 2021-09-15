@@ -1,0 +1,23 @@
+<app-encabezado titulo="Login" icono="power"></app-encabezado>
+
+<ion-content class="ion-padding">
+  <form #miformulario="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" name="usr" required [(ngModel)]="usuario.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required name="psw" [(ngModel)]="usuario.password"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" expand="block" >
+      Iniciar Sesión
+    </ion-button>
+
+  </form>
+
+</ion-content>
+
+<app-footer></app-footer>

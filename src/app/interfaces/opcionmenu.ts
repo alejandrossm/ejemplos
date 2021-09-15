@@ -3,3 +3,4 @@ export interface Opcionmenu {
     texto:string;
     icono:string;
 }
+

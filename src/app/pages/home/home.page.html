@@ -10,13 +10,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-text color="primary">
-    <h1>Página Home</h1>
+  <div *ngIf="nombreusuario!==''" >
+    <ion-text color="primary">
+      <h1>Página Home</h1>
+      <h3>Bienvenido {{nombreusuario}}</h3>
+    </ion-text>
+    <ion-text>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima saepe, reiciendis dolor delectus numquam
+        fugiat fuga repellendus hic perspiciatis eligendi vero, excepturi mollitia quo consequuntur earum nisi,
+        similique iste placeat!</p>
+    </ion-text>
+  </div>
+
+  <ion-text color="danger" *ngIf="nombreusuario===''" >
+    <h1>No está autorizado para ver este contenido</h1>
   </ion-text>
-  <ion-text>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima saepe, reiciendis dolor delectus numquam fugiat fuga repellendus hic perspiciatis eligendi vero, excepturi mollitia quo consequuntur earum nisi, similique iste placeat!</p>
-  </ion-text>
-  <ion-button expand="expand" shape="round" routerLink='../pag2'>
+
+  <!-- <ion-button expand="expand" shape="round" routerLink='../pag2'>
     Ir a página 2
   </ion-button>
   <ion-button expand="block" color="warning" routerLink='../pag3'>
@@ -24,8 +34,8 @@
   </ion-button>
   <ion-button  expand="block" routerLink="../pag4">
     Ir a página 4
-  </ion-button>
-  
+  </ion-button> -->
+
 </ion-content>
 
 <app-footer></app-footer>
