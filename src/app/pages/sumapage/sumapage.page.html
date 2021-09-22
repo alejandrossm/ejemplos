@@ -16,7 +16,7 @@
         <ion-input type="number" [(ngModel)]="n2"></ion-input>
       </ion-item>
 
-      <ion-button expand="block" (click)="Sumar()">
+      <ion-button expand="block" (click)="Sumar()" class="animate__animated animate__bounce animate__slower">
         Sumar
       </ion-button>
 
@@ -33,7 +33,7 @@
 
           <ion-item>
             <ion-label position="floating">Ingrese número</ion-label>
-            <ion-input type="number" [(ngModel)]="a" name="numa" required></ion-input>
+            <ion-input type="number" [(ngModel)]="a" name="numa" required mode="ios"></ion-input>
           </ion-item>
 
           <ion-item>
@@ -41,7 +41,7 @@
             <ion-input type="number" [(ngModel)]="b" name="numb" required></ion-input>
           </ion-item>
 
-          <ion-button type="submit" expand="block" [disabled]="formulario.invalid">
+          <ion-button type="submit" expand="block" [disabled]="formulario.invalid" mode="md" class="animate__animated animate__bounce">
             Sumar con Formulario
           </ion-button>
 
